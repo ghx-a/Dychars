@@ -3,114 +3,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>模块1 · 智能归因分析平台</title>
+<title>智能归因分析平台</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body {
     width: 100%; height: 100vh; overflow: hidden;
     font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
-    background:
-      linear-gradient(180deg, #eaf5ec 0%, #d6ecda 60%, #c4e2cb 100%);
+    background: transparent;
     display: flex; align-items: center; justify-content: center;
-    position: relative;
   }
-  .farm-bg {
-    position: absolute; bottom: 0; left: 0; right: 0; height: 35%;
-    background: linear-gradient(to top, rgba(120,180,90,0.25), transparent);
-    pointer-events: none; z-index: 0;
-  }
-
-  .card {
-    position: relative; z-index: 1;
-    width: 320px;
-    background: rgba(255, 255, 255, 0.78);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-radius: 14px;
-    padding: 18px 22px;
-    box-shadow: 0 4px 18px rgba(34, 102, 51, 0.12);
-    border: 1px solid rgba(120, 200, 140, 0.25);
-  }
-
-  .head {
-    display: flex; align-items: center; gap: 7px;
-    font-size: 15px; color: #2d7a3f; font-weight: 600;
-    margin-bottom: 14px; padding-bottom: 10px;
-    border-bottom: 1px dashed rgba(45, 122, 63, 0.2);
-  }
-  .head::before {
-    content: ""; width: 8px; height: 8px; border-radius: 50%;
-    background: #43a047; box-shadow: 0 0 6px #43a047;
-  }
-
-  .row {
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 7px 0; font-size: 15px;
-  }
-  .row .label { color: #4a7a5a; }
-  .row .val { font-weight: 700; color: #1a5c2b; }
-  .row .val.orange { color: #e67e22; }
-  .row .val.red { color: #d9482b; }
-
-  .top3 {
-    display: flex; flex-wrap: wrap; gap: 5px;
-    margin: 8px 0 4px 0;
-    max-width: 100%;
-  }
-  .top3 span {
-    font-size: 13px; padding: 3px 10px;
-    background: #fdecd5; color: #c66a1d;
-    border-radius: 10px;
-  }
-
-  .short {
-    font-size: 13px; color: #b88216;
-    background: #fff7e0; padding: 8px 10px;
-    border-radius: 8px; margin: 8px 0 14px 0;
-    line-height: 1.5;
-  }
-
   .btn {
-    display: block; width: 100%;
-    padding: 13px 0; border-radius: 25px;
-    text-align: center; text-decoration: none;
+    display: inline-block;
+    padding: 14px 40px; border-radius: 30px;
+    text-decoration: none;
     font-size: 16px; font-weight: 700; color: #fff;
     background: linear-gradient(135deg, #2e7d32, #43a047, #66bb6a);
-    box-shadow: 0 3px 10px rgba(46, 125, 50, 0.3);
+    box-shadow: 0 4px 14px rgba(46, 125, 50, 0.35);
     transition: all .2s;
   }
   .btn:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 14px rgba(46, 125, 50, 0.45);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.45);
   }
-  .btn .arrow { margin-left: 5px; }
+  .btn .arrow { margin-left: 6px; }
 </style>
 </head>
 <body>
-
-<div class="farm-bg"></div>
-
-<div class="card">
-  <div class="head">风险研判总览</div>
-
-  <div class="row"><span class="label">整体判别</span><span class="val orange">中风险</span></div>
-  <div class="row"><span class="label">最高风险地市</span><span class="val">三门峡市</span></div>
-  <div class="row"><span class="label">综合风险分</span><span class="val red">6.6933</span></div>
-
-  <div class="row"><span class="label">TOP3驱动因子</span></div>
-  <div class="top3">
-    <span>天气风险</span>
-    <span>价格风险</span>
-    <span>供给风险</span>
-  </div>
-
-  <div class="row"><span class="label">模型风险短板</span></div>
-  <div class="short">数据不足·价格数据不足·消费数据不足</div>
-
   <a class="btn" href="http://39.96.80.229:8501/" target="_blank">
-    查看完整归因<span class="arrow">→</span>
+    智能归因分析平台<span class="arrow">→</span>
   </a>
-</div>
-
 </body>
 </html>
