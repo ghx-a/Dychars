@@ -22,87 +22,83 @@
 
   .card {
     position: relative; z-index: 1;
-    width: 220px;
+    width: 320px;
     background: rgba(255, 255, 255, 0.78);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-radius: 12px;
-    padding: 12px 14px;
+    border-radius: 14px;
+    padding: 18px 22px;
     box-shadow: 0 4px 18px rgba(34, 102, 51, 0.12);
     border: 1px solid rgba(120, 200, 140, 0.25);
   }
 
-  /* 标题 + 状态点 */
   .title-row {
-    display: flex; align-items: center; gap: 6px;
-    font-size: 13px; font-weight: 700; color: #1a5c2b;
-    margin-bottom: 4px;
+    display: flex; align-items: center; gap: 8px;
+    font-size: 16px; font-weight: 700; color: #1a5c2b;
+    margin-bottom: 5px;
   }
   .title-row .icon {
-    width: 18px; height: 18px; border-radius: 50%;
+    width: 24px; height: 24px; border-radius: 50%;
     background: linear-gradient(135deg, #43a047, #66bb6a);
     display: flex; align-items: center; justify-content: center;
-    color: #fff; font-size: 11px; font-weight: 800;
+    color: #fff; font-size: 12px; font-weight: 800;
   }
   .status {
-    display: flex; align-items: center; gap: 5px;
-    font-size: 10px; color: #5a8a6a; margin-bottom: 12px;
-    padding-bottom: 10px;
+    display: flex; align-items: center; gap: 7px;
+    font-size: 13px; color: #5a8a6a; margin-bottom: 16px;
+    padding-bottom: 12px;
     border-bottom: 1px dashed rgba(45, 122, 63, 0.2);
   }
   .status::before {
-    content: ""; width: 6px; height: 6px; border-radius: 50%;
+    content: ""; width: 8px; height: 8px; border-radius: 50%;
     background: #43a047; box-shadow: 0 0 6px #43a047;
   }
 
-  /* 按钮 */
   .btn {
     display: block; width: 100%;
-    padding: 9px 0; border-radius: 20px;
+    padding: 13px 0; border-radius: 25px;
     text-align: center; text-decoration: none;
-    font-size: 13px; font-weight: 700; color: #fff;
+    font-size: 16px; font-weight: 700; color: #fff;
     background: linear-gradient(135deg, #2e7d32, #43a047, #66bb6a);
     box-shadow: 0 3px 10px rgba(46, 125, 50, 0.3);
     transition: all .2s;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
   .btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 5px 14px rgba(46, 125, 50, 0.45);
   }
-  .btn .arrow { margin-left: 4px; }
+  .btn .arrow { margin-left: 5px; }
 
-  /* 推荐追问 */
   .section-label {
-    font-size: 11px; color: #4a7a5a; font-weight: 600;
-    margin-bottom: 6px;
+    font-size: 14px; color: #4a7a5a; font-weight: 600;
+    margin-bottom: 8px;
   }
-  .qa-list { margin-bottom: 10px; }
+  .qa-list { margin-bottom: 14px; }
   .qa {
-    display: flex; align-items: flex-start; gap: 5px;
-    padding: 5px 0;
-    font-size: 11px; color: #2d5a3a;
+    display: flex; align-items: flex-start; gap: 7px;
+    padding: 7px 0;
+    font-size: 14px; color: #2d5a3a;
     border-bottom: 1px dashed rgba(45, 122, 63, 0.12);
-    line-height: 1.4;
+    line-height: 1.5;
   }
   .qa:last-child { border-bottom: none; }
   .qa .qmark {
     flex-shrink: 0;
-    width: 12px; height: 12px; border-radius: 3px;
+    width: 16px; height: 16px; border-radius: 4px;
     background: #43a047; color: #fff;
     display: flex; align-items: center; justify-content: center;
-    font-size: 9px; font-weight: 800;
+    font-size: 11px; font-weight: 800;
   }
 
-  /* 标签 */
   .tags {
-    display: flex; flex-wrap: wrap; gap: 4px;
-    padding-top: 8px;
+    display: flex; flex-wrap: wrap; gap: 6px;
+    padding-top: 10px;
     border-top: 1px dashed rgba(45, 122, 63, 0.2);
   }
   .tags span {
-    font-size: 10px; padding: 2px 7px;
-    border-radius: 10px;
+    font-size: 13px; padding: 4px 11px;
+    border-radius: 12px;
   }
   .tag-1 { background: #e3f4e3; color: #2d7a3f; }
   .tag-2 { background: #d8eef5; color: #1a6e8a; }
